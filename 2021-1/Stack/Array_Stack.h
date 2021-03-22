@@ -1,3 +1,8 @@
+/*
+Array_based Stack
+	Written by: wowo0709
+	Date: 2021-03-11
+*/
 #ifndef __ARRAY_STACK__
 #define __ARRAY_STACK__
 // 배열 기반의 스택 구현

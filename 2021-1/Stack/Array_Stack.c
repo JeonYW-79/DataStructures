@@ -1,3 +1,8 @@
+#/*
+Array_based Stack.
+	Written by: wowo0709
+	Date: 2021-03-11
+*/
 #include "Array_Stack.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -72,7 +77,7 @@ void PrintStackItems(ArrayStack* pStack)    // 스택의 모든 원소 출력
 	int cur = 0;
 
 	printf("Stack Items: ");
-	while(cur < pStack->top + 1)
+	while (cur < pStack->top + 1)
 	{
 		printf("%d ", pStack->stack[cur++]);
 	}
