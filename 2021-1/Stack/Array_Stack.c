@@ -89,5 +89,7 @@ void ClearStack(ArrayStack* pStack)         // 스택의 모든 원소 삭제
 {
 	free(pStack->stack);
 
+	pStack->stack = (Element*)malloc(sizeof(Element) * pStack->size);
+
 	return;
 }
