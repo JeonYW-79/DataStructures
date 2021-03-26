@@ -10,7 +10,7 @@ Convert decimal to binary.
 
 int main(void)
 {
-	ArrayStack* stack = CreateStack(STACK_SIZE);  // Create Stack
+	ArrayStack* stack = CreateStack(STACK_SIZE);  // Create Stack (Memory allocation)
 	int num, n;
 
 	printf("*****Start Decimal to Binary Conversion Program*****\n\n");
@@ -32,6 +32,8 @@ int main(void)
 		printf("%d", Pop(stack));
 
 	printf("\n\n*****End Decimal to Binary Conversion Program*****\n");
+
+	DestroyStack(stack);                         // Destroy Stack (free allocated memory)
 
 	return 0;
 }
